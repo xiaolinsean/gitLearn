@@ -52,3 +52,10 @@ B：最快捷的方法：按了ESC后，直接按shift+zz，或者切换到大�
 - grep -C number pattern files：匹配的上下文分别显示[number]行，
 - grep pattern1 | pattern2 files ：显示匹配 pattern1 或 pattern2的行，
 
+### tail -f  查看动态日志
+
+- 基本操作： 
+- tail -f files.log  默认展示日志最后10条数据，如有数据更新，则自动更新
+- tail -100f files.log  默认展示日志最后100条数据
+- 由于日志是动态更新的，所以，打印出自己想要的日志数据后，为防止刷屏，可ctrl+c退出后，再看日志数据；如需具体查看特定内容，可选中内容后右击-查找，及可高亮显示需要的内容。
+
