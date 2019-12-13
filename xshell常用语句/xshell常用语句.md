@@ -50,10 +50,7 @@ B：最快捷的方法：按了ESC后，直接按shift+zz，或者切换到大�
 - grep -i pattern files：不区分大小写地搜索。默认情况区分大小写，
 - grep -w pattern files：只匹配整个单词，而不是字符串的一部分（如匹配‘magic’，而不是‘magical’），
 - grep -C number pattern files：匹配的上下文分别显示[number]行，
-- grep 'pattern1' filename | grep 'pattern2' ，grep的AND，多条件的与查询。
-- grep 'pattern1\|pattern2' filename， grep的OR，多条件的或查询
-- grep -E 'pattern1|pattern2' filename， grep的OR，多条件的或查询
-- grep --color pattern1 files : 高亮显示
+- grep pattern1 | pattern2 files ：显示匹配 pattern1 或 pattern2的行，
 
 ### tail -f  查看动态日志
 
